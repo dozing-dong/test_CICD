@@ -320,8 +320,6 @@ public class TestAuthenticationHandler : AuthenticationHandler<AuthenticationSch
       UrlEncoder encoder)
       : base(options, logger, encoder)
   {
-    // 设置 TimeProvider
-    Options.TimeProvider = timeProvider;
   }
 
   protected override Task<AuthenticateResult> HandleAuthenticateAsync()
