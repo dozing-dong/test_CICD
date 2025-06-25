@@ -4,7 +4,8 @@ using Microsoft.Extensions.Options;
 namespace FarmGear_Application.Services;
 
 /// <summary>
-/// JWT Bearer选项配置 - 使用ASP.NET Core 8新的TokenHandlers API
+/// JWT Bearer选项配置 - 兼容ASP.NET Core 8
+/// 使用UseSecurityTokenValidators = true来继续使用SecurityTokenValidators API
 /// </summary>
 public class JwtBearerOptionsSetup : IConfigureNamedOptions<JwtBearerOptions>
 {
@@ -19,9 +20,11 @@ public class JwtBearerOptionsSetup : IConfigureNamedOptions<JwtBearerOptions>
   {
     if (name == JwtBearerDefaults.AuthenticationScheme)
     {
-      // 使用新的TokenHandlers API替代过时的SecurityTokenValidators
-      options.TokenHandlers.Clear();
-      options.TokenHandlers.Add(_blacklistValidator);
+      // 在ASP.NET Core 8中，设置UseSecurityTokenValidators = true来继续使用旧的API
+      // 这样可以避免编译错误，同时保持功能正常
+      options.UseSecurityTokenValidators = true;
+      options.SecurityTokenValidators.Clear();
+      options.SecurityTokenValidators.Add(_blacklistValidator);
     }
   }
 
