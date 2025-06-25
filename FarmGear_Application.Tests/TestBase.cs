@@ -98,11 +98,26 @@ public abstract class TestBase
             services.Remove(descriptor);
           }
 
-          // 添加内存数据库
-          services.AddDbContext<ApplicationDbContext>(options =>
+          // 根据环境选择数据库类型
+          var useInMemoryDb = Environment.GetEnvironmentVariable("USE_IN_MEMORY_DB") != "false";
+          if (useInMemoryDb)
           {
-            options.UseInMemoryDatabase("FarmGearTestDb");
-          });
+            // 使用内存数据库（本地开发测试）
+            services.AddDbContext<ApplicationDbContext>(options =>
+            {
+              options.UseInMemoryDatabase("FarmGearTestDb");
+            });
+          }
+          else
+          {
+            // 使用真实数据库（CI 环境）
+            services.AddDbContext<ApplicationDbContext>(options =>
+            {
+              var connectionString = Environment.GetEnvironmentVariable("TEST_DB_CONNECTION")
+                ?? "Server=localhost;Port=3307;Database=FarmGearTestDb;User=testuser;Password=test123456;";
+              options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+            });
+          }
 
           // 配置测试用的JWT设置
           services.Configure<JwtSettings>(options =>
@@ -120,13 +135,19 @@ public abstract class TestBase
           // 配置测试用的授权
           services.AddAuthorization();
 
-          // 移除Redis服务，使用内存缓存替代
-          var redisDescriptor = services.SingleOrDefault(d => d.ServiceType == typeof(IRedisCacheService));
-          if (redisDescriptor != null)
+          // 根据环境选择 Redis 服务
+          var useMockRedis = Environment.GetEnvironmentVariable("USE_MOCK_REDIS") != "false";
+          if (useMockRedis)
           {
-            services.Remove(redisDescriptor);
+            // 移除Redis服务，使用内存缓存替代
+            var redisDescriptor = services.SingleOrDefault(d => d.ServiceType == typeof(IRedisCacheService));
+            if (redisDescriptor != null)
+            {
+              services.Remove(redisDescriptor);
+            }
+            services.AddScoped<IRedisCacheService, MockRedisCacheService>();
           }
-          services.AddScoped<IRedisCacheService, MockRedisCacheService>();
+          // 否则使用真实的 RedisCacheService（CI 环境）
         });
       });
   }

@@ -1,0 +1,76 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: test123456
+          MYSQL_DATABASE: FarmGearTestDb
+          MYSQL_USER: testuser
+          MYSQL_PASSWORD: test123456
+        ports:
+          - 3307:3306
+        options: --health-cmd="mysqladmin ping -h localhost" --health-interval=10s --health-timeout=5s --health-retries=5
+
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6380:6379
+        options: --health-cmd="redis-cli ping" --health-interval=10s --health-timeout=5s --health-retries=5
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Wait for MySQL and Redis
+        run: |
+          for i in {1..30}; do
+            if mysqladmin ping -h 127.0.0.1 -P 3307 -u testuser -ptest123456 --silent; then
+              echo "MySQL is up!"
+              break
+            fi
+            echo "Waiting for MySQL..."
+            sleep 2
+          done
+          for i in {1..30}; do
+            if redis-cli -h 127.0.0.1 -p 6380 ping | grep PONG; then
+              echo "Redis is up!"
+              break
+            fi
+            echo "Waiting for Redis..."
+            sleep 2
+          done
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --no-restore --configuration Release
+
+      - name: Test and generate .trx report
+        run: dotnet test --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx" --results-directory ./TestResults
+        env:
+          USE_IN_MEMORY_DB: false
+          USE_MOCK_REDIS: false
+          TEST_DB_CONNECTION: Server=127.0.0.1;Port=3307;Database=FarmGearTestDb;User=testuser;Password=test123456;
+          TEST_REDIS_CONNECTION: 127.0.0.1:6380
+
+      - name: Upload Test Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: ./FarmGear_Application.Tests/TestResults/*.trx 
