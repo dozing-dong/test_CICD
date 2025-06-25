@@ -3,6 +3,9 @@ using Microsoft.Extensions.Options;
 
 namespace FarmGear_Application.Services;
 
+/// <summary>
+/// JWT Bearer选项配置 - 使用ASP.NET Core 8新的TokenHandlers API
+/// </summary>
 public class JwtBearerOptionsSetup : IConfigureNamedOptions<JwtBearerOptions>
 {
   private readonly JwtBlacklistValidator _blacklistValidator;
@@ -16,10 +19,9 @@ public class JwtBearerOptionsSetup : IConfigureNamedOptions<JwtBearerOptions>
   {
     if (name == JwtBearerDefaults.AuthenticationScheme)
     {
-      // 启用 SecurityTokenValidators 以继续使用旧 API
-      options.UseSecurityTokenValidators = true;
-      options.SecurityTokenValidators.Clear();
-      options.SecurityTokenValidators.Add(_blacklistValidator);
+      // 使用新的TokenHandlers API替代过时的SecurityTokenValidators
+      options.TokenHandlers.Clear();
+      options.TokenHandlers.Add(_blacklistValidator);
     }
   }
 

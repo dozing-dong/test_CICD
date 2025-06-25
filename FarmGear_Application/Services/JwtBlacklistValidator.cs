@@ -6,7 +6,8 @@ using System.Security.Claims;
 namespace FarmGear_Application.Services;
 
 /// <summary>
-/// JWT黑名单验证器 - 符合ASP.NET Core标准认证架构
+/// JWT黑名单验证器 - 符合ASP.NET Core 8标准认证架构
+/// 使用ISecurityTokenValidator接口配合新的TokenHandlers API
 /// </summary>
 public class JwtBlacklistValidator : ISecurityTokenValidator
 {
