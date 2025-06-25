@@ -16,6 +16,8 @@ public class JwtBearerOptionsSetup : IConfigureNamedOptions<JwtBearerOptions>
   {
     if (name == JwtBearerDefaults.AuthenticationScheme)
     {
+      // 启用 SecurityTokenValidators 以继续使用旧 API
+      options.UseSecurityTokenValidators = true;
       options.SecurityTokenValidators.Clear();
       options.SecurityTokenValidators.Add(_blacklistValidator);
     }
