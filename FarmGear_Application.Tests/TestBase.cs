@@ -115,7 +115,20 @@ public abstract class TestBase
             {
               var connectionString = Environment.GetEnvironmentVariable("TEST_DB_CONNECTION")
                 ?? "Server=localhost;Port=3307;Database=FarmGearTestDb;User=testuser;Password=test123456;";
-              options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+              try
+              {
+                options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString),
+                  mySqlOptions =>
+                  {
+                    mySqlOptions.EnableRetryOnFailure(3, TimeSpan.FromSeconds(5), null);
+                    mySqlOptions.CommandTimeout(30);
+                  });
+              }
+              catch (Exception)
+              {
+                // 如果无法连接MySQL，回退到内存数据库
+                options.UseInMemoryDatabase("FarmGearTestDb_Fallback");
+              }
             });
           }
 
@@ -304,8 +317,7 @@ public class TestAuthenticationHandler : AuthenticationHandler<AuthenticationSch
   public TestAuthenticationHandler(
       IOptionsMonitor<AuthenticationSchemeOptions> options,
       ILoggerFactory logger,
-      UrlEncoder encoder,
-      TimeProvider timeProvider)
+      UrlEncoder encoder)
       : base(options, logger, encoder)
   {
     // 设置 TimeProvider

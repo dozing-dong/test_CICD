@@ -1,65 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TestRun id="f425e272-3d01-4c60-a850-2632fb399769" name="89681@CY 2025-06-25 13:32:30" runUser="CY\89681" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <Times creation="2025-06-25T13:32:30.0771633+08:00" queuing="2025-06-25T13:32:30.0771634+08:00" start="2025-06-25T13:32:29.6689616+08:00" finish="2025-06-25T13:32:31.1001344+08:00" />
-  <TestSettings name="default" id="294a4292-d517-4679-ad47-7a99afa65da6">
-    <Deployment runDeploymentRoot="89681_CY_2025-06-25_13_32_30" />
+<TestRun id="bf30c066-8853-4736-b9ab-cb770e70d082" name="89681@CY 2025-06-25 13:30:18" runUser="CY\89681" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-06-25T13:30:18.2767701+08:00" queuing="2025-06-25T13:30:18.2767706+08:00" start="2025-06-25T13:30:17.8647003+08:00" finish="2025-06-25T13:30:19.3326455+08:00" />
+  <TestSettings name="default" id="dd87a0d3-644f-4f94-aa7f-ddf79279216e">
+    <Deployment runDeploymentRoot="89681_CY_2025-06-25_13_30_18" />
   </TestSettings>
   <Results>
-    <UnitTestResult executionId="d89e6266-1d3e-4fd5-a495-f59ad14c4e64" testId="72ef346c-0cc5-19be-ca59-ff625649ef64" testName="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetMyEquipmentList_WithoutAuthentication_ReturnsUnauthorized" computerName="CY" duration="00:00:00.0130839" startTime="2025-06-25T13:32:30.9764682+08:00" endTime="2025-06-25T13:32:30.9764683+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d89e6266-1d3e-4fd5-a495-f59ad14c4e64" />
-    <UnitTestResult executionId="be4f9c76-b4f1-4afe-ba00-658be6c284a6" testId="374e1850-00a9-9380-78d8-24f57b72af6c" testName="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.UpdateEquipment_WithoutAuthentication_ReturnsUnauthorized" computerName="CY" duration="00:00:00.0167745" startTime="2025-06-25T13:32:31.0525516+08:00" endTime="2025-06-25T13:32:31.0525517+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="be4f9c76-b4f1-4afe-ba00-658be6c284a6" />
-    <UnitTestResult executionId="29eb351c-58ab-494a-a91b-8fe5d06384ce" testId="530e2346-3f5a-3c4d-b692-8271ccffd095" testName="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.CreateEquipment_WithAuthentication_ReturnsCreated" computerName="CY" duration="00:00:00.0162212" startTime="2025-06-25T13:32:30.9933608+08:00" endTime="2025-06-25T13:32:30.9933608+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="29eb351c-58ab-494a-a91b-8fe5d06384ce">
-      <Output>
-        <ErrorInfo>
-          <Message>Expected response.StatusCode to be HttpStatusCode.Created {value: 201}, but found HttpStatusCode.Unauthorized {value: 401}.</Message>
-          <StackTrace>   at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)&#xD;
-   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
-   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)&#xD;
-   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
-   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
-   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)&#xD;
-   at FluentAssertions.Primitives.EnumAssertions`2.Be(TEnum expected, String because, Object[] becauseArgs)&#xD;
-   at FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.CreateEquipment_WithAuthentication_ReturnsCreated() in D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\Integration\EquipmentControllerIntegrationTests.cs:line 302&#xD;
---- End of stack trace from previous location ---</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="7d963234-d84d-4778-b5ba-1b8866ef7a66" testId="6e948fbe-dfca-5407-b16b-f3c8cc618d7f" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.DeleteEquipment_EquipmentNotExists_ReturnsNotFound" computerName="CY" duration="00:00:00.0007303" startTime="2025-06-25T13:32:30.0634243+08:00" endTime="2025-06-25T13:32:30.0634243+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d963234-d84d-4778-b5ba-1b8866ef7a66" />
-    <UnitTestResult executionId="f9af4762-bafa-417f-ae93-f21120b8c33b" testId="1dcc2a84-b1ea-dab9-874c-567be9e423ef" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.GetMyEquipmentList_ValidRequest_ReturnsOkResult" computerName="CY" duration="00:00:00.0009287" startTime="2025-06-25T13:32:30.0641604+08:00" endTime="2025-06-25T13:32:30.0641604+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f9af4762-bafa-417f-ae93-f21120b8c33b" />
-    <UnitTestResult executionId="11b425df-dd06-43e7-88a5-7b30fe0e0fca" testId="eaeffcb3-952b-bbd7-1403-39ce71726f30" testName="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.DeleteEquipment_WithoutAuthentication_ReturnsUnauthorized" computerName="CY" duration="00:00:00.0529020" startTime="2025-06-25T13:32:30.8255510+08:00" endTime="2025-06-25T13:32:30.8255511+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="11b425df-dd06-43e7-88a5-7b30fe0e0fca" />
-    <UnitTestResult executionId="00da4d3c-05ba-4fba-ba55-bb452d5a27c4" testId="ace5f719-1406-f845-d87d-f7398c862269" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.GetEquipmentList_ServiceError_ReturnsBadRequest" computerName="CY" duration="00:00:00.0006844" startTime="2025-06-25T13:32:30.0473525+08:00" endTime="2025-06-25T13:32:30.0473526+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="00da4d3c-05ba-4fba-ba55-bb452d5a27c4" />
-    <UnitTestResult executionId="ca3b7756-ce1c-4749-9788-7a03b7e1ec7f" testId="4f22438f-f929-4208-031f-2f33ad62c650" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.GetEquipmentById_ValidId_ReturnsOkResult" computerName="CY" duration="00:00:00.0015389" startTime="2025-06-25T13:32:30.0399447+08:00" endTime="2025-06-25T13:32:30.0399448+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ca3b7756-ce1c-4749-9788-7a03b7e1ec7f" />
-    <UnitTestResult executionId="7696390d-3335-4c9c-82b6-88b7b3040bf2" testId="1c54b09a-3a35-2396-4214-b9ae98b8ac11" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.DeleteEquipment_HasActiveOrders_ReturnsConflict" computerName="CY" duration="00:00:00.0013205" startTime="2025-06-25T13:32:30.0389038+08:00" endTime="2025-06-25T13:32:30.0389038+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7696390d-3335-4c9c-82b6-88b7b3040bf2" />
-    <UnitTestResult executionId="f77b4416-b066-4f83-a04d-250276fb97ad" testId="4c271616-2702-6f35-f868-71c3bc834c1b" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.CreateEquipment_UserNotExists_ReturnsNotFound" computerName="CY" duration="00:00:00.0007727" startTime="2025-06-25T13:32:30.0634068+08:00" endTime="2025-06-25T13:32:30.0634069+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f77b4416-b066-4f83-a04d-250276fb97ad" />
-    <UnitTestResult executionId="17661da7-5f27-4870-aed9-d7599686eaee" testId="fbfb5f36-2132-d82c-059a-f342d1713dbb" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.CreateEquipment_NoUserClaim_ReturnsBadRequest" computerName="CY" duration="00:00:00.0018590" startTime="2025-06-25T13:32:30.0633549+08:00" endTime="2025-06-25T13:32:30.0633549+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="17661da7-5f27-4870-aed9-d7599686eaee" />
-    <UnitTestResult executionId="671a0e44-88a4-4baa-bcca-c732a65a60d4" testId="2254a4ac-9d63-5561-2b5d-7b2f56bb3320" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.UpdateEquipment_ValidRequest_ReturnsOkResult" computerName="CY" duration="00:00:00.0011933" startTime="2025-06-25T13:32:30.0632422+08:00" endTime="2025-06-25T13:32:30.0632422+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="671a0e44-88a4-4baa-bcca-c732a65a60d4" />
-    <UnitTestResult executionId="199d4fe2-3c6a-4941-a5a1-2c375e50ab5f" testId="160455ca-6b78-f971-6df4-a407960ebb1f" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.CreateEquipment_ValidRequest_ReturnsCreatedResult" computerName="CY" duration="00:00:00.0015622" startTime="2025-06-25T13:32:30.0634557+08:00" endTime="2025-06-25T13:32:30.0634558+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="199d4fe2-3c6a-4941-a5a1-2c375e50ab5f" />
-    <UnitTestResult executionId="c8ba9ddf-ec4e-40c2-b441-c8fabb0313d7" testId="504f0580-e0a7-403a-8567-4ee7d3c5e07e" testName="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.CreateEquipment_WithoutAuthentication_ReturnsUnauthorized" computerName="CY" duration="00:00:00.0211162" startTime="2025-06-25T13:32:30.9632962+08:00" endTime="2025-06-25T13:32:30.9632963+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c8ba9ddf-ec4e-40c2-b441-c8fabb0313d7" />
-    <UnitTestResult executionId="36bc094b-36df-4df9-aed7-b3fd3663ab0e" testId="959281b8-19a1-79f6-09e4-7707bf4ae16e" testName="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetMyEquipmentList_WithAuthentication_ReturnsSuccess" computerName="CY" duration="00:00:00.7842549" startTime="2025-06-25T13:32:30.7837581+08:00" endTime="2025-06-25T13:32:30.7837583+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="36bc094b-36df-4df9-aed7-b3fd3663ab0e">
-      <Output>
-        <ErrorInfo>
-          <Message>Expected response.StatusCode to be HttpStatusCode.OK {value: 200}, but found HttpStatusCode.Unauthorized {value: 401}.</Message>
-          <StackTrace>   at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)&#xD;
-   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
-   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)&#xD;
-   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
-   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
-   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)&#xD;
-   at FluentAssertions.Primitives.EnumAssertions`2.Be(TEnum expected, String because, Object[] becauseArgs)&#xD;
-   at FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetMyEquipmentList_WithAuthentication_ReturnsSuccess() in D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\Integration\EquipmentControllerIntegrationTests.cs:line 343&#xD;
---- End of stack trace from previous location ---</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="69b88f15-7f35-4583-8aed-025d6484d538" testId="36585ab8-3b12-1b2c-823d-878646d3d9e6" testName="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetEquipmentById_WithValidId_ReturnsEquipment" computerName="CY" duration="00:00:00.0373425" startTime="2025-06-25T13:32:30.9420681+08:00" endTime="2025-06-25T13:32:30.9420682+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="69b88f15-7f35-4583-8aed-025d6484d538" />
-    <UnitTestResult executionId="7de5c49c-daef-4346-a87e-ceade6347d98" testId="45e4ee7d-da63-fb10-3e29-938737680d4b" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.DeleteEquipment_NoPermission_ReturnsForbid" computerName="CY" duration="00:00:00.0007947" startTime="2025-06-25T13:32:30.0482265+08:00" endTime="2025-06-25T13:32:30.0482266+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7de5c49c-daef-4346-a87e-ceade6347d98" />
-    <UnitTestResult executionId="cf23b263-adbe-4b8e-8e82-0d834c4746ba" testId="0eb500c4-1f9f-b43d-78f1-6c776704ac62" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.GetEquipmentById_EquipmentNotExists_ReturnsNotFound" computerName="CY" duration="00:00:00.0005944" startTime="2025-06-25T13:32:30.0633364+08:00" endTime="2025-06-25T13:32:30.0633364+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cf23b263-adbe-4b8e-8e82-0d834c4746ba" />
-    <UnitTestResult executionId="88c21679-d52e-418c-a27f-c43b1d9d1c7b" testId="ad6e4cb6-11b0-fac9-f91e-c2553f41b5bf" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.UpdateEquipment_EquipmentNotExists_ReturnsNotFound" computerName="CY" duration="00:00:00.0014628" startTime="2025-06-25T13:32:30.0466723+08:00" endTime="2025-06-25T13:32:30.0466723+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="88c21679-d52e-418c-a27f-c43b1d9d1c7b" />
-    <UnitTestResult executionId="9a27f54d-b139-4a07-9512-3250a4fd4a9e" testId="a23b123c-5f3d-df99-f44e-2d75fd77364f" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.GetEquipmentList_ExceptionThrown_ReturnsInternalServerError" computerName="CY" duration="00:00:00.0025535" startTime="2025-06-25T13:32:30.0424563+08:00" endTime="2025-06-25T13:32:30.0424564+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9a27f54d-b139-4a07-9512-3250a4fd4a9e" />
-    <UnitTestResult executionId="3ec5b0f3-1741-4642-ae4f-041785b52047" testId="c01f0462-7e97-d1e8-077f-007ceb5265e2" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.DeleteEquipment_ValidRequest_ReturnsOkResult" computerName="CY" duration="00:00:00.0488752" startTime="2025-06-25T13:32:30.0373983+08:00" endTime="2025-06-25T13:32:30.0374087+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3ec5b0f3-1741-4642-ae4f-041785b52047" />
-    <UnitTestResult executionId="f8c4c11e-bb06-45d1-8b0f-de7322487ff9" testId="c0de3765-13d9-3248-c4b9-5e4551b7eea2" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.GetEquipmentList_ValidRequest_ReturnsOkResult" computerName="CY" duration="00:00:00.0009487" startTime="2025-06-25T13:32:30.0633706+08:00" endTime="2025-06-25T13:32:30.0633706+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f8c4c11e-bb06-45d1-8b0f-de7322487ff9" />
-    <UnitTestResult executionId="d9c80d32-8553-4cde-b537-f9ad6b790c9c" testId="80da0148-e164-44ce-d643-3226320767d8" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.CreateEquipment_NoPermission_ReturnsForbid" computerName="CY" duration="00:00:00.0007601" startTime="2025-06-25T13:32:30.0641789+08:00" endTime="2025-06-25T13:32:30.0641789+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d9c80d32-8553-4cde-b537-f9ad6b790c9c" />
-    <UnitTestResult executionId="d449848a-d3a4-4528-876a-5f902e19a0db" testId="49a4922e-0c80-1176-9bdf-71427c7bff3c" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.CreateEquipment_ExceptionThrown_ReturnsInternalServerError" computerName="CY" duration="00:00:00.0010259" startTime="2025-06-25T13:32:30.0633904+08:00" endTime="2025-06-25T13:32:30.0633904+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d449848a-d3a4-4528-876a-5f902e19a0db" />
-    <UnitTestResult executionId="caae6bf9-fd6a-4290-a77e-9cc183363311" testId="ae842265-aeb6-27e0-8735-d14fbf690c0e" testName="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetEquipmentList_ReturnsSuccessAndCorrectFormat" computerName="CY" duration="00:00:00.0424227" startTime="2025-06-25T13:32:31.0368657+08:00" endTime="2025-06-25T13:32:31.0368658+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="caae6bf9-fd6a-4290-a77e-9cc183363311">
+    <UnitTestResult executionId="e942259d-0a52-4dc4-8dad-4c061f016503" testId="72ef346c-0cc5-19be-ca59-ff625649ef64" testName="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetMyEquipmentList_WithoutAuthentication_ReturnsUnauthorized" computerName="CY" duration="00:00:00.0135614" startTime="2025-06-25T13:30:19.2091617+08:00" endTime="2025-06-25T13:30:19.2091618+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e942259d-0a52-4dc4-8dad-4c061f016503" />
+    <UnitTestResult executionId="a2e31a83-38e9-4bdd-b8aa-23a2abc48744" testId="ad6e4cb6-11b0-fac9-f91e-c2553f41b5bf" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.UpdateEquipment_EquipmentNotExists_ReturnsNotFound" computerName="CY" duration="00:00:00.0015544" startTime="2025-06-25T13:30:18.2464365+08:00" endTime="2025-06-25T13:30:18.2464368+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a2e31a83-38e9-4bdd-b8aa-23a2abc48744" />
+    <UnitTestResult executionId="bc6b2224-61d8-4b25-90a4-140dc76febe6" testId="16282afc-407c-a57f-ea15-ba7c43ae98cf" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.DeleteEquipment_AsAdmin_CallsServiceWithAdminFlag" computerName="CY" duration="00:00:00.0024920" startTime="2025-06-25T13:30:18.2447994+08:00" endTime="2025-06-25T13:30:18.2447996+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bc6b2224-61d8-4b25-90a4-140dc76febe6" />
+    <UnitTestResult executionId="48533a52-d088-4c6a-bf77-47277d2004a8" testId="ace5f719-1406-f845-d87d-f7398c862269" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.GetEquipmentList_ServiceError_ReturnsBadRequest" computerName="CY" duration="00:00:00.0007486" startTime="2025-06-25T13:30:18.2472169+08:00" endTime="2025-06-25T13:30:18.2472170+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="48533a52-d088-4c6a-bf77-47277d2004a8" />
+    <UnitTestResult executionId="fadd8751-8604-46bf-8123-9fad03a056de" testId="1c54b09a-3a35-2396-4214-b9ae98b8ac11" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.DeleteEquipment_HasActiveOrders_ReturnsConflict" computerName="CY" duration="00:00:00.0014305" startTime="2025-06-25T13:30:18.2375925+08:00" endTime="2025-06-25T13:30:18.2375925+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fadd8751-8604-46bf-8123-9fad03a056de" />
+    <UnitTestResult executionId="1f434c53-bd25-4b5c-909d-78512e659373" testId="374e1850-00a9-9380-78d8-24f57b72af6c" testName="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.UpdateEquipment_WithoutAuthentication_ReturnsUnauthorized" computerName="CY" duration="00:00:00.0153349" startTime="2025-06-25T13:30:19.2840368+08:00" endTime="2025-06-25T13:30:19.2840368+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1f434c53-bd25-4b5c-909d-78512e659373" />
+    <UnitTestResult executionId="7caa0fc8-0fb2-494c-90b8-356da8e51a8f" testId="1dcc2a84-b1ea-dab9-874c-567be9e423ef" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.GetMyEquipmentList_ValidRequest_ReturnsOkResult" computerName="CY" duration="00:00:00.0009310" startTime="2025-06-25T13:30:18.2636282+08:00" endTime="2025-06-25T13:30:18.2636282+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7caa0fc8-0fb2-494c-90b8-356da8e51a8f" />
+    <UnitTestResult executionId="b0b498c4-7c2e-47a1-8837-35c27fda3f60" testId="df57ce66-fcd7-e157-3a04-8493cada1bcc" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.UpdateEquipment_NoPermission_ReturnsForbid" computerName="CY" duration="00:00:00.0009456" startTime="2025-06-25T13:30:18.2636078+08:00" endTime="2025-06-25T13:30:18.2636079+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b0b498c4-7c2e-47a1-8837-35c27fda3f60" />
+    <UnitTestResult executionId="75022ad3-88a5-49ac-9bd2-a6abad078320" testId="a23b123c-5f3d-df99-f44e-2d75fd77364f" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.GetEquipmentList_ExceptionThrown_ReturnsInternalServerError" computerName="CY" duration="00:00:00.0031140" startTime="2025-06-25T13:30:18.2422584+08:00" endTime="2025-06-25T13:30:18.2422587+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="75022ad3-88a5-49ac-9bd2-a6abad078320" />
+    <UnitTestResult executionId="7e09da7d-5375-473b-8bb8-0f2ea2af2c10" testId="ae842265-aeb6-27e0-8735-d14fbf690c0e" testName="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetEquipmentList_ReturnsSuccessAndCorrectFormat" computerName="CY" duration="00:00:00.0435147" startTime="2025-06-25T13:30:19.2693603+08:00" endTime="2025-06-25T13:30:19.2693604+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7e09da7d-5375-473b-8bb8-0f2ea2af2c10">
       <Output>
         <ErrorInfo>
           <Message>System.InvalidOperationException : Each parameter in the deserialization constructor on type 'FarmGear_Application.DTOs.PaginatedList`1[FarmGear_Application.DTOs.Equipment.EquipmentViewDto]' must bind to an object property or field on deserialization. Each parameter name must match with a property or field on the object. Fields are only considered when 'JsonSerializerOptions.IncludeFields' is enabled. The match can be case-insensitive.</Message>
@@ -78,7 +33,11 @@
         </ErrorInfo>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="7ce40981-26e0-4d1c-a7ac-5a610580b541" testId="ab6668f5-9f1c-61e9-11d1-73b7c48e73da" testName="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetEquipmentList_WithQueryParameters_ReturnsFilteredResults" computerName="CY" duration="00:00:00.0783483" startTime="2025-06-25T13:32:30.9051206+08:00" endTime="2025-06-25T13:32:30.9051206+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7ce40981-26e0-4d1c-a7ac-5a610580b541">
+    <UnitTestResult executionId="1703df1a-2be2-4427-9a4d-3740afa2131b" testId="36585ab8-3b12-1b2c-823d-878646d3d9e6" testName="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetEquipmentById_WithValidId_ReturnsEquipment" computerName="CY" duration="00:00:00.0408988" startTime="2025-06-25T13:30:19.1763945+08:00" endTime="2025-06-25T13:30:19.1763946+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1703df1a-2be2-4427-9a4d-3740afa2131b" />
+    <UnitTestResult executionId="24e2f1f6-030f-444b-8af5-e7391bf44ed3" testId="6e948fbe-dfca-5407-b16b-f3c8cc618d7f" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.DeleteEquipment_EquipmentNotExists_ReturnsNotFound" computerName="CY" duration="00:00:00.0007855" startTime="2025-06-25T13:30:18.2628935+08:00" endTime="2025-06-25T13:30:18.2628935+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="24e2f1f6-030f-444b-8af5-e7391bf44ed3" />
+    <UnitTestResult executionId="e0d21a11-d9af-4b8e-ad51-0a000e8e42ac" testId="01904536-e7b9-5443-0afa-2ae8d1d53f35" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.GetMyEquipmentList_NoUserClaim_ReturnsBadRequest" computerName="CY" duration="00:00:00.0006332" startTime="2025-06-25T13:30:18.2629106+08:00" endTime="2025-06-25T13:30:18.2629106+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e0d21a11-d9af-4b8e-ad51-0a000e8e42ac" />
+    <UnitTestResult executionId="da49ba16-6218-4846-b0e4-a26e2ba9c1cf" testId="c01f0462-7e97-d1e8-077f-007ceb5265e2" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.DeleteEquipment_ValidRequest_ReturnsOkResult" computerName="CY" duration="00:00:00.0504112" startTime="2025-06-25T13:30:18.2358499+08:00" endTime="2025-06-25T13:30:18.2358600+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="da49ba16-6218-4846-b0e4-a26e2ba9c1cf" />
+    <UnitTestResult executionId="c8a8a42f-99b7-4771-b6f4-02a83af5316a" testId="ab6668f5-9f1c-61e9-11d1-73b7c48e73da" testName="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetEquipmentList_WithQueryParameters_ReturnsFilteredResults" computerName="CY" duration="00:00:00.0908447" startTime="2025-06-25T13:30:19.1366138+08:00" endTime="2025-06-25T13:30:19.1366140+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c8a8a42f-99b7-4771-b6f4-02a83af5316a">
       <Output>
         <ErrorInfo>
           <Message>System.InvalidOperationException : Each parameter in the deserialization constructor on type 'FarmGear_Application.DTOs.PaginatedList`1[FarmGear_Application.DTOs.Equipment.EquipmentViewDto]' must bind to an object property or field on deserialization. Each parameter name must match with a property or field on the object. Fields are only considered when 'JsonSerializerOptions.IncludeFields' is enabled. The match can be case-insensitive.</Message>
@@ -97,158 +56,199 @@
         </ErrorInfo>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="0dd20cd5-1143-449f-b273-a1e6b63f9005" testId="df57ce66-fcd7-e157-3a04-8493cada1bcc" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.UpdateEquipment_NoPermission_ReturnsForbid" computerName="CY" duration="00:00:00.0008287" startTime="2025-06-25T13:32:30.0641370+08:00" endTime="2025-06-25T13:32:30.0641371+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0dd20cd5-1143-449f-b273-a1e6b63f9005" />
-    <UnitTestResult executionId="67799176-be14-468e-a45a-c8411f47d6bb" testId="16282afc-407c-a57f-ea15-ba7c43ae98cf" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.DeleteEquipment_AsAdmin_CallsServiceWithAdminFlag" computerName="CY" duration="00:00:00.0026793" startTime="2025-06-25T13:32:30.0451740+08:00" endTime="2025-06-25T13:32:30.0451741+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="67799176-be14-468e-a45a-c8411f47d6bb" />
-    <UnitTestResult executionId="90919e70-4224-41e8-9a1e-507fef100679" testId="01904536-e7b9-5443-0afa-2ae8d1d53f35" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.GetMyEquipmentList_NoUserClaim_ReturnsBadRequest" computerName="CY" duration="00:00:00.0008711" startTime="2025-06-25T13:32:30.0634402+08:00" endTime="2025-06-25T13:32:30.0634403+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="90919e70-4224-41e8-9a1e-507fef100679" />
+    <UnitTestResult executionId="0b161e0c-8934-47b9-804e-b92d209d0669" testId="504f0580-e0a7-403a-8567-4ee7d3c5e07e" testName="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.CreateEquipment_WithoutAuthentication_ReturnsUnauthorized" computerName="CY" duration="00:00:00.0190410" startTime="2025-06-25T13:30:19.1955101+08:00" endTime="2025-06-25T13:30:19.1955102+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0b161e0c-8934-47b9-804e-b92d209d0669" />
+    <UnitTestResult executionId="fe247955-833b-4797-9a33-a85afd879315" testId="0eb500c4-1f9f-b43d-78f1-6c776704ac62" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.GetEquipmentById_EquipmentNotExists_ReturnsNotFound" computerName="CY" duration="00:00:00.0005809" startTime="2025-06-25T13:30:18.2627993+08:00" endTime="2025-06-25T13:30:18.2627993+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fe247955-833b-4797-9a33-a85afd879315" />
+    <UnitTestResult executionId="7b71cf2f-6a0c-4300-ad09-d34ccb4715b2" testId="4c271616-2702-6f35-f868-71c3bc834c1b" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.CreateEquipment_UserNotExists_ReturnsNotFound" computerName="CY" duration="00:00:00.0008148" startTime="2025-06-25T13:30:18.2628777+08:00" endTime="2025-06-25T13:30:18.2628778+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7b71cf2f-6a0c-4300-ad09-d34ccb4715b2" />
+    <UnitTestResult executionId="7a0efd71-b45f-4037-ba2d-55dd16d1b471" testId="80da0148-e164-44ce-d643-3226320767d8" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.CreateEquipment_NoPermission_ReturnsForbid" computerName="CY" duration="00:00:00.0006991" startTime="2025-06-25T13:30:18.2636475+08:00" endTime="2025-06-25T13:30:18.2636476+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7a0efd71-b45f-4037-ba2d-55dd16d1b471" />
+    <UnitTestResult executionId="1d9f020f-e026-4b1e-a2de-9509bf4423c2" testId="49a4922e-0c80-1176-9bdf-71427c7bff3c" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.CreateEquipment_ExceptionThrown_ReturnsInternalServerError" computerName="CY" duration="00:00:00.0011771" startTime="2025-06-25T13:30:18.2628607+08:00" endTime="2025-06-25T13:30:18.2628607+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1d9f020f-e026-4b1e-a2de-9509bf4423c2" />
+    <UnitTestResult executionId="41023c65-ca47-4119-9427-711c44c3d007" testId="2254a4ac-9d63-5561-2b5d-7b2f56bb3320" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.UpdateEquipment_ValidRequest_ReturnsOkResult" computerName="CY" duration="00:00:00.0012514" startTime="2025-06-25T13:30:18.2626953+08:00" endTime="2025-06-25T13:30:18.2626953+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="41023c65-ca47-4119-9427-711c44c3d007" />
+    <UnitTestResult executionId="0e849bbf-0ba6-49a9-a5b0-9c23622938ac" testId="530e2346-3f5a-3c4d-b692-8271ccffd095" testName="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.CreateEquipment_WithAuthentication_ReturnsCreated" computerName="CY" duration="00:00:00.0153799" startTime="2025-06-25T13:30:19.2251710+08:00" endTime="2025-06-25T13:30:19.2251711+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0e849bbf-0ba6-49a9-a5b0-9c23622938ac">
+      <Output>
+        <ErrorInfo>
+          <Message>Expected response.StatusCode to be HttpStatusCode.Created {value: 201}, but found HttpStatusCode.Unauthorized {value: 401}.</Message>
+          <StackTrace>   at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)&#xD;
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)&#xD;
+   at FluentAssertions.Primitives.EnumAssertions`2.Be(TEnum expected, String because, Object[] becauseArgs)&#xD;
+   at FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.CreateEquipment_WithAuthentication_ReturnsCreated() in D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\Integration\EquipmentControllerIntegrationTests.cs:line 302&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7606cb7d-f852-45e2-8873-e004a0cf947a" testId="45e4ee7d-da63-fb10-3e29-938737680d4b" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.DeleteEquipment_NoPermission_ReturnsForbid" computerName="CY" duration="00:00:00.0007542" startTime="2025-06-25T13:30:18.2479670+08:00" endTime="2025-06-25T13:30:18.2479670+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7606cb7d-f852-45e2-8873-e004a0cf947a" />
+    <UnitTestResult executionId="914507e5-237d-43b6-a234-2d5f01ca524c" testId="4f22438f-f929-4208-031f-2f33ad62c650" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.GetEquipmentById_ValidId_ReturnsOkResult" computerName="CY" duration="00:00:00.0020649" startTime="2025-06-25T13:30:18.2390878+08:00" endTime="2025-06-25T13:30:18.2390880+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="914507e5-237d-43b6-a234-2d5f01ca524c" />
+    <UnitTestResult executionId="c799b717-9af4-4ae5-8a9e-ef5302265235" testId="c0de3765-13d9-3248-c4b9-5e4551b7eea2" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.GetEquipmentList_ValidRequest_ReturnsOkResult" computerName="CY" duration="00:00:00.0008890" startTime="2025-06-25T13:30:18.2628403+08:00" endTime="2025-06-25T13:30:18.2628403+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c799b717-9af4-4ae5-8a9e-ef5302265235" />
+    <UnitTestResult executionId="cf1b4079-ad66-418f-8421-57ea4715110d" testId="959281b8-19a1-79f6-09e4-7707bf4ae16e" testName="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetMyEquipmentList_WithAuthentication_ReturnsSuccess" computerName="CY" duration="00:00:00.7981671" startTime="2025-06-25T13:30:18.9940420+08:00" endTime="2025-06-25T13:30:18.9940422+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cf1b4079-ad66-418f-8421-57ea4715110d">
+      <Output>
+        <ErrorInfo>
+          <Message>Expected response.StatusCode to be HttpStatusCode.OK {value: 200}, but found HttpStatusCode.Unauthorized {value: 401}.</Message>
+          <StackTrace>   at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)&#xD;
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)&#xD;
+   at FluentAssertions.Primitives.EnumAssertions`2.Be(TEnum expected, String because, Object[] becauseArgs)&#xD;
+   at FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetMyEquipmentList_WithAuthentication_ReturnsSuccess() in D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\Integration\EquipmentControllerIntegrationTests.cs:line 343&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fbe109cb-c4df-4fef-aeec-1da1d342508c" testId="eaeffcb3-952b-bbd7-1403-39ce71726f30" testName="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.DeleteEquipment_WithoutAuthentication_ReturnsUnauthorized" computerName="CY" duration="00:00:00.0601527" startTime="2025-06-25T13:30:19.0437300+08:00" endTime="2025-06-25T13:30:19.0437302+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fbe109cb-c4df-4fef-aeec-1da1d342508c" />
+    <UnitTestResult executionId="80a72418-0670-4150-acfd-d08c4215a05e" testId="fbfb5f36-2132-d82c-059a-f342d1713dbb" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.CreateEquipment_NoUserClaim_ReturnsBadRequest" computerName="CY" duration="00:00:00.0019248" startTime="2025-06-25T13:30:18.2628230+08:00" endTime="2025-06-25T13:30:18.2628231+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="80a72418-0670-4150-acfd-d08c4215a05e" />
+    <UnitTestResult executionId="e8d28732-fba6-4ba8-89fb-b919d23cb4f8" testId="160455ca-6b78-f971-6df4-a407960ebb1f" testName="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.CreateEquipment_ValidRequest_ReturnsCreatedResult" computerName="CY" duration="00:00:00.0022946" startTime="2025-06-25T13:30:18.2629267+08:00" endTime="2025-06-25T13:30:18.2629267+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e8d28732-fba6-4ba8-89fb-b919d23cb4f8" />
   </Results>
   <TestDefinitions>
     <UnitTest name="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.DeleteEquipment_NoPermission_ReturnsForbid" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="45e4ee7d-da63-fb10-3e29-938737680d4b">
-      <Execution id="7de5c49c-daef-4346-a87e-ceade6347d98" />
+      <Execution id="7606cb7d-f852-45e2-8873-e004a0cf947a" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Controllers.EquipmentControllerTests" name="DeleteEquipment_NoPermission_ReturnsForbid" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.UpdateEquipment_NoPermission_ReturnsForbid" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="df57ce66-fcd7-e157-3a04-8493cada1bcc">
-      <Execution id="0dd20cd5-1143-449f-b273-a1e6b63f9005" />
+      <Execution id="b0b498c4-7c2e-47a1-8837-35c27fda3f60" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Controllers.EquipmentControllerTests" name="UpdateEquipment_NoPermission_ReturnsForbid" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetEquipmentById_WithValidId_ReturnsEquipment" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="36585ab8-3b12-1b2c-823d-878646d3d9e6">
-      <Execution id="69b88f15-7f35-4583-8aed-025d6484d538" />
+      <Execution id="1703df1a-2be2-4427-9a4d-3740afa2131b" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests" name="GetEquipmentById_WithValidId_ReturnsEquipment" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.GetEquipmentList_ServiceError_ReturnsBadRequest" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="ace5f719-1406-f845-d87d-f7398c862269">
-      <Execution id="00da4d3c-05ba-4fba-ba55-bb452d5a27c4" />
+      <Execution id="48533a52-d088-4c6a-bf77-47277d2004a8" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Controllers.EquipmentControllerTests" name="GetEquipmentList_ServiceError_ReturnsBadRequest" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.CreateEquipment_UserNotExists_ReturnsNotFound" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="4c271616-2702-6f35-f868-71c3bc834c1b">
-      <Execution id="f77b4416-b066-4f83-a04d-250276fb97ad" />
+      <Execution id="7b71cf2f-6a0c-4300-ad09-d34ccb4715b2" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Controllers.EquipmentControllerTests" name="CreateEquipment_UserNotExists_ReturnsNotFound" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.UpdateEquipment_EquipmentNotExists_ReturnsNotFound" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="ad6e4cb6-11b0-fac9-f91e-c2553f41b5bf">
-      <Execution id="88c21679-d52e-418c-a27f-c43b1d9d1c7b" />
+      <Execution id="a2e31a83-38e9-4bdd-b8aa-23a2abc48744" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Controllers.EquipmentControllerTests" name="UpdateEquipment_EquipmentNotExists_ReturnsNotFound" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetMyEquipmentList_WithAuthentication_ReturnsSuccess" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="959281b8-19a1-79f6-09e4-7707bf4ae16e">
-      <Execution id="36bc094b-36df-4df9-aed7-b3fd3663ab0e" />
+      <Execution id="cf1b4079-ad66-418f-8421-57ea4715110d" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests" name="GetMyEquipmentList_WithAuthentication_ReturnsSuccess" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.DeleteEquipment_WithoutAuthentication_ReturnsUnauthorized" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="eaeffcb3-952b-bbd7-1403-39ce71726f30">
-      <Execution id="11b425df-dd06-43e7-88a5-7b30fe0e0fca" />
+      <Execution id="fbe109cb-c4df-4fef-aeec-1da1d342508c" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests" name="DeleteEquipment_WithoutAuthentication_ReturnsUnauthorized" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.UpdateEquipment_WithoutAuthentication_ReturnsUnauthorized" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="374e1850-00a9-9380-78d8-24f57b72af6c">
-      <Execution id="be4f9c76-b4f1-4afe-ba00-658be6c284a6" />
+      <Execution id="1f434c53-bd25-4b5c-909d-78512e659373" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests" name="UpdateEquipment_WithoutAuthentication_ReturnsUnauthorized" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.CreateEquipment_WithoutAuthentication_ReturnsUnauthorized" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="504f0580-e0a7-403a-8567-4ee7d3c5e07e">
-      <Execution id="c8ba9ddf-ec4e-40c2-b441-c8fabb0313d7" />
+      <Execution id="0b161e0c-8934-47b9-804e-b92d209d0669" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests" name="CreateEquipment_WithoutAuthentication_ReturnsUnauthorized" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.GetMyEquipmentList_ValidRequest_ReturnsOkResult" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="1dcc2a84-b1ea-dab9-874c-567be9e423ef">
-      <Execution id="f9af4762-bafa-417f-ae93-f21120b8c33b" />
+      <Execution id="7caa0fc8-0fb2-494c-90b8-356da8e51a8f" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Controllers.EquipmentControllerTests" name="GetMyEquipmentList_ValidRequest_ReturnsOkResult" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetEquipmentList_ReturnsSuccessAndCorrectFormat" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="ae842265-aeb6-27e0-8735-d14fbf690c0e">
-      <Execution id="caae6bf9-fd6a-4290-a77e-9cc183363311" />
+      <Execution id="7e09da7d-5375-473b-8bb8-0f2ea2af2c10" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests" name="GetEquipmentList_ReturnsSuccessAndCorrectFormat" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.CreateEquipment_ExceptionThrown_ReturnsInternalServerError" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="49a4922e-0c80-1176-9bdf-71427c7bff3c">
-      <Execution id="d449848a-d3a4-4528-876a-5f902e19a0db" />
+      <Execution id="1d9f020f-e026-4b1e-a2de-9509bf4423c2" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Controllers.EquipmentControllerTests" name="CreateEquipment_ExceptionThrown_ReturnsInternalServerError" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.DeleteEquipment_ValidRequest_ReturnsOkResult" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="c01f0462-7e97-d1e8-077f-007ceb5265e2">
-      <Execution id="3ec5b0f3-1741-4642-ae4f-041785b52047" />
+      <Execution id="da49ba16-6218-4846-b0e4-a26e2ba9c1cf" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Controllers.EquipmentControllerTests" name="DeleteEquipment_ValidRequest_ReturnsOkResult" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.GetEquipmentList_ExceptionThrown_ReturnsInternalServerError" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="a23b123c-5f3d-df99-f44e-2d75fd77364f">
-      <Execution id="9a27f54d-b139-4a07-9512-3250a4fd4a9e" />
+      <Execution id="75022ad3-88a5-49ac-9bd2-a6abad078320" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Controllers.EquipmentControllerTests" name="GetEquipmentList_ExceptionThrown_ReturnsInternalServerError" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.DeleteEquipment_EquipmentNotExists_ReturnsNotFound" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="6e948fbe-dfca-5407-b16b-f3c8cc618d7f">
-      <Execution id="7d963234-d84d-4778-b5ba-1b8866ef7a66" />
+      <Execution id="24e2f1f6-030f-444b-8af5-e7391bf44ed3" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Controllers.EquipmentControllerTests" name="DeleteEquipment_EquipmentNotExists_ReturnsNotFound" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.CreateEquipment_WithAuthentication_ReturnsCreated" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="530e2346-3f5a-3c4d-b692-8271ccffd095">
-      <Execution id="29eb351c-58ab-494a-a91b-8fe5d06384ce" />
+      <Execution id="0e849bbf-0ba6-49a9-a5b0-9c23622938ac" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests" name="CreateEquipment_WithAuthentication_ReturnsCreated" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.GetEquipmentById_ValidId_ReturnsOkResult" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="4f22438f-f929-4208-031f-2f33ad62c650">
-      <Execution id="ca3b7756-ce1c-4749-9788-7a03b7e1ec7f" />
+      <Execution id="914507e5-237d-43b6-a234-2d5f01ca524c" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Controllers.EquipmentControllerTests" name="GetEquipmentById_ValidId_ReturnsOkResult" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.GetEquipmentById_EquipmentNotExists_ReturnsNotFound" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="0eb500c4-1f9f-b43d-78f1-6c776704ac62">
-      <Execution id="cf23b263-adbe-4b8e-8e82-0d834c4746ba" />
+      <Execution id="fe247955-833b-4797-9a33-a85afd879315" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Controllers.EquipmentControllerTests" name="GetEquipmentById_EquipmentNotExists_ReturnsNotFound" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.DeleteEquipment_HasActiveOrders_ReturnsConflict" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="1c54b09a-3a35-2396-4214-b9ae98b8ac11">
-      <Execution id="7696390d-3335-4c9c-82b6-88b7b3040bf2" />
+      <Execution id="fadd8751-8604-46bf-8123-9fad03a056de" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Controllers.EquipmentControllerTests" name="DeleteEquipment_HasActiveOrders_ReturnsConflict" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.DeleteEquipment_AsAdmin_CallsServiceWithAdminFlag" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="16282afc-407c-a57f-ea15-ba7c43ae98cf">
-      <Execution id="67799176-be14-468e-a45a-c8411f47d6bb" />
+      <Execution id="bc6b2224-61d8-4b25-90a4-140dc76febe6" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Controllers.EquipmentControllerTests" name="DeleteEquipment_AsAdmin_CallsServiceWithAdminFlag" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.CreateEquipment_NoUserClaim_ReturnsBadRequest" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="fbfb5f36-2132-d82c-059a-f342d1713dbb">
-      <Execution id="17661da7-5f27-4870-aed9-d7599686eaee" />
+      <Execution id="80a72418-0670-4150-acfd-d08c4215a05e" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Controllers.EquipmentControllerTests" name="CreateEquipment_NoUserClaim_ReturnsBadRequest" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.UpdateEquipment_ValidRequest_ReturnsOkResult" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="2254a4ac-9d63-5561-2b5d-7b2f56bb3320">
-      <Execution id="671a0e44-88a4-4baa-bcca-c732a65a60d4" />
+      <Execution id="41023c65-ca47-4119-9427-711c44c3d007" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Controllers.EquipmentControllerTests" name="UpdateEquipment_ValidRequest_ReturnsOkResult" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.CreateEquipment_ValidRequest_ReturnsCreatedResult" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="160455ca-6b78-f971-6df4-a407960ebb1f">
-      <Execution id="199d4fe2-3c6a-4941-a5a1-2c375e50ab5f" />
+      <Execution id="e8d28732-fba6-4ba8-89fb-b919d23cb4f8" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Controllers.EquipmentControllerTests" name="CreateEquipment_ValidRequest_ReturnsCreatedResult" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.GetMyEquipmentList_NoUserClaim_ReturnsBadRequest" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="01904536-e7b9-5443-0afa-2ae8d1d53f35">
-      <Execution id="90919e70-4224-41e8-9a1e-507fef100679" />
+      <Execution id="e0d21a11-d9af-4b8e-ad51-0a000e8e42ac" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Controllers.EquipmentControllerTests" name="GetMyEquipmentList_NoUserClaim_ReturnsBadRequest" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetEquipmentList_WithQueryParameters_ReturnsFilteredResults" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="ab6668f5-9f1c-61e9-11d1-73b7c48e73da">
-      <Execution id="7ce40981-26e0-4d1c-a7ac-5a610580b541" />
+      <Execution id="c8a8a42f-99b7-4771-b6f4-02a83af5316a" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests" name="GetEquipmentList_WithQueryParameters_ReturnsFilteredResults" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.GetEquipmentList_ValidRequest_ReturnsOkResult" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="c0de3765-13d9-3248-c4b9-5e4551b7eea2">
-      <Execution id="f8c4c11e-bb06-45d1-8b0f-de7322487ff9" />
+      <Execution id="c799b717-9af4-4ae5-8a9e-ef5302265235" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Controllers.EquipmentControllerTests" name="GetEquipmentList_ValidRequest_ReturnsOkResult" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetMyEquipmentList_WithoutAuthentication_ReturnsUnauthorized" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="72ef346c-0cc5-19be-ca59-ff625649ef64">
-      <Execution id="d89e6266-1d3e-4fd5-a495-f59ad14c4e64" />
+      <Execution id="e942259d-0a52-4dc4-8dad-4c061f016503" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests" name="GetMyEquipmentList_WithoutAuthentication_ReturnsUnauthorized" />
     </UnitTest>
     <UnitTest name="FarmGear_Application.Tests.Controllers.EquipmentControllerTests.CreateEquipment_NoPermission_ReturnsForbid" storage="d:\cicdtest\test-cicd-project\test-cicd-project\farmgear_application.tests\bin\debug\net8.0\farmgear_application.tests.dll" id="80da0148-e164-44ce-d643-3226320767d8">
-      <Execution id="d9c80d32-8553-4cde-b537-f9ad6b790c9c" />
+      <Execution id="7a0efd71-b45f-4037-ba2d-55dd16d1b471" />
       <TestMethod codeBase="D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\bin\Debug\net8.0\FarmGear_Application.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="FarmGear_Application.Tests.Controllers.EquipmentControllerTests" name="CreateEquipment_NoPermission_ReturnsForbid" />
     </UnitTest>
   </TestDefinitions>
   <TestEntries>
-    <TestEntry testId="72ef346c-0cc5-19be-ca59-ff625649ef64" executionId="d89e6266-1d3e-4fd5-a495-f59ad14c4e64" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="374e1850-00a9-9380-78d8-24f57b72af6c" executionId="be4f9c76-b4f1-4afe-ba00-658be6c284a6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="530e2346-3f5a-3c4d-b692-8271ccffd095" executionId="29eb351c-58ab-494a-a91b-8fe5d06384ce" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="6e948fbe-dfca-5407-b16b-f3c8cc618d7f" executionId="7d963234-d84d-4778-b5ba-1b8866ef7a66" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="1dcc2a84-b1ea-dab9-874c-567be9e423ef" executionId="f9af4762-bafa-417f-ae93-f21120b8c33b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="eaeffcb3-952b-bbd7-1403-39ce71726f30" executionId="11b425df-dd06-43e7-88a5-7b30fe0e0fca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="ace5f719-1406-f845-d87d-f7398c862269" executionId="00da4d3c-05ba-4fba-ba55-bb452d5a27c4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="4f22438f-f929-4208-031f-2f33ad62c650" executionId="ca3b7756-ce1c-4749-9788-7a03b7e1ec7f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="1c54b09a-3a35-2396-4214-b9ae98b8ac11" executionId="7696390d-3335-4c9c-82b6-88b7b3040bf2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="4c271616-2702-6f35-f868-71c3bc834c1b" executionId="f77b4416-b066-4f83-a04d-250276fb97ad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="fbfb5f36-2132-d82c-059a-f342d1713dbb" executionId="17661da7-5f27-4870-aed9-d7599686eaee" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="2254a4ac-9d63-5561-2b5d-7b2f56bb3320" executionId="671a0e44-88a4-4baa-bcca-c732a65a60d4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="160455ca-6b78-f971-6df4-a407960ebb1f" executionId="199d4fe2-3c6a-4941-a5a1-2c375e50ab5f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="504f0580-e0a7-403a-8567-4ee7d3c5e07e" executionId="c8ba9ddf-ec4e-40c2-b441-c8fabb0313d7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="959281b8-19a1-79f6-09e4-7707bf4ae16e" executionId="36bc094b-36df-4df9-aed7-b3fd3663ab0e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="36585ab8-3b12-1b2c-823d-878646d3d9e6" executionId="69b88f15-7f35-4583-8aed-025d6484d538" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="45e4ee7d-da63-fb10-3e29-938737680d4b" executionId="7de5c49c-daef-4346-a87e-ceade6347d98" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="0eb500c4-1f9f-b43d-78f1-6c776704ac62" executionId="cf23b263-adbe-4b8e-8e82-0d834c4746ba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="ad6e4cb6-11b0-fac9-f91e-c2553f41b5bf" executionId="88c21679-d52e-418c-a27f-c43b1d9d1c7b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="a23b123c-5f3d-df99-f44e-2d75fd77364f" executionId="9a27f54d-b139-4a07-9512-3250a4fd4a9e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="c01f0462-7e97-d1e8-077f-007ceb5265e2" executionId="3ec5b0f3-1741-4642-ae4f-041785b52047" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="c0de3765-13d9-3248-c4b9-5e4551b7eea2" executionId="f8c4c11e-bb06-45d1-8b0f-de7322487ff9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="80da0148-e164-44ce-d643-3226320767d8" executionId="d9c80d32-8553-4cde-b537-f9ad6b790c9c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="49a4922e-0c80-1176-9bdf-71427c7bff3c" executionId="d449848a-d3a4-4528-876a-5f902e19a0db" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="ae842265-aeb6-27e0-8735-d14fbf690c0e" executionId="caae6bf9-fd6a-4290-a77e-9cc183363311" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="ab6668f5-9f1c-61e9-11d1-73b7c48e73da" executionId="7ce40981-26e0-4d1c-a7ac-5a610580b541" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="df57ce66-fcd7-e157-3a04-8493cada1bcc" executionId="0dd20cd5-1143-449f-b273-a1e6b63f9005" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="16282afc-407c-a57f-ea15-ba7c43ae98cf" executionId="67799176-be14-468e-a45a-c8411f47d6bb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="01904536-e7b9-5443-0afa-2ae8d1d53f35" executionId="90919e70-4224-41e8-9a1e-507fef100679" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="72ef346c-0cc5-19be-ca59-ff625649ef64" executionId="e942259d-0a52-4dc4-8dad-4c061f016503" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ad6e4cb6-11b0-fac9-f91e-c2553f41b5bf" executionId="a2e31a83-38e9-4bdd-b8aa-23a2abc48744" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="16282afc-407c-a57f-ea15-ba7c43ae98cf" executionId="bc6b2224-61d8-4b25-90a4-140dc76febe6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ace5f719-1406-f845-d87d-f7398c862269" executionId="48533a52-d088-4c6a-bf77-47277d2004a8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1c54b09a-3a35-2396-4214-b9ae98b8ac11" executionId="fadd8751-8604-46bf-8123-9fad03a056de" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="374e1850-00a9-9380-78d8-24f57b72af6c" executionId="1f434c53-bd25-4b5c-909d-78512e659373" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1dcc2a84-b1ea-dab9-874c-567be9e423ef" executionId="7caa0fc8-0fb2-494c-90b8-356da8e51a8f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="df57ce66-fcd7-e157-3a04-8493cada1bcc" executionId="b0b498c4-7c2e-47a1-8837-35c27fda3f60" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a23b123c-5f3d-df99-f44e-2d75fd77364f" executionId="75022ad3-88a5-49ac-9bd2-a6abad078320" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ae842265-aeb6-27e0-8735-d14fbf690c0e" executionId="7e09da7d-5375-473b-8bb8-0f2ea2af2c10" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="36585ab8-3b12-1b2c-823d-878646d3d9e6" executionId="1703df1a-2be2-4427-9a4d-3740afa2131b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6e948fbe-dfca-5407-b16b-f3c8cc618d7f" executionId="24e2f1f6-030f-444b-8af5-e7391bf44ed3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="01904536-e7b9-5443-0afa-2ae8d1d53f35" executionId="e0d21a11-d9af-4b8e-ad51-0a000e8e42ac" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c01f0462-7e97-d1e8-077f-007ceb5265e2" executionId="da49ba16-6218-4846-b0e4-a26e2ba9c1cf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ab6668f5-9f1c-61e9-11d1-73b7c48e73da" executionId="c8a8a42f-99b7-4771-b6f4-02a83af5316a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="504f0580-e0a7-403a-8567-4ee7d3c5e07e" executionId="0b161e0c-8934-47b9-804e-b92d209d0669" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0eb500c4-1f9f-b43d-78f1-6c776704ac62" executionId="fe247955-833b-4797-9a33-a85afd879315" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4c271616-2702-6f35-f868-71c3bc834c1b" executionId="7b71cf2f-6a0c-4300-ad09-d34ccb4715b2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="80da0148-e164-44ce-d643-3226320767d8" executionId="7a0efd71-b45f-4037-ba2d-55dd16d1b471" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="49a4922e-0c80-1176-9bdf-71427c7bff3c" executionId="1d9f020f-e026-4b1e-a2de-9509bf4423c2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2254a4ac-9d63-5561-2b5d-7b2f56bb3320" executionId="41023c65-ca47-4119-9427-711c44c3d007" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="530e2346-3f5a-3c4d-b692-8271ccffd095" executionId="0e849bbf-0ba6-49a9-a5b0-9c23622938ac" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="45e4ee7d-da63-fb10-3e29-938737680d4b" executionId="7606cb7d-f852-45e2-8873-e004a0cf947a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4f22438f-f929-4208-031f-2f33ad62c650" executionId="914507e5-237d-43b6-a234-2d5f01ca524c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c0de3765-13d9-3248-c4b9-5e4551b7eea2" executionId="c799b717-9af4-4ae5-8a9e-ef5302265235" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="959281b8-19a1-79f6-09e4-7707bf4ae16e" executionId="cf1b4079-ad66-418f-8421-57ea4715110d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eaeffcb3-952b-bbd7-1403-39ce71726f30" executionId="fbe109cb-c4df-4fef-aeec-1da1d342508c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fbfb5f36-2132-d82c-059a-f342d1713dbb" executionId="80a72418-0670-4150-acfd-d08c4215a05e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="160455ca-6b78-f971-6df4-a407960ebb1f" executionId="e8d28732-fba6-4ba8-89fb-b919d23cb4f8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
   </TestEntries>
   <TestLists>
     <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
@@ -258,9 +258,9 @@
     <Counters total="29" executed="29" passed="25" failed="4" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
     <Output>
       <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.6+bf9b858c26 (64-bit .NET 8.0.16)&#xD;
-[xUnit.net 00:00:00.04]   Discovering: FarmGear_Application.Tests&#xD;
-[xUnit.net 00:00:00.06]   Discovered:  FarmGear_Application.Tests&#xD;
-[xUnit.net 00:00:00.06]   Starting:    FarmGear_Application.Tests&#xD;
+[xUnit.net 00:00:00.05]   Discovering: FarmGear_Application.Tests&#xD;
+[xUnit.net 00:00:00.07]   Discovered:  FarmGear_Application.Tests&#xD;
+[xUnit.net 00:00:00.07]   Starting:    FarmGear_Application.Tests&#xD;
 info: Microsoft.EntityFrameworkCore.Update[30100]&#xD;
       Saved 0 entities to in-memory store.&#xD;
 info: Microsoft.EntityFrameworkCore.Update[30100]&#xD;
@@ -292,7 +292,7 @@ info: Microsoft.EntityFrameworkCore.Update[30100]&#xD;
 info: Microsoft.EntityFrameworkCore.Update[30100]&#xD;
       Saved 2 entities to in-memory store.&#xD;
 info: FarmGear_Application.Services.EnhancedJwtService[0]&#xD;
-      Generated token and cached session for user c23bb2d6-d764-4e1c-8ae7-7f86c7005e84&#xD;
+      Generated token and cached session for user 60dff372-25ca-4036-9e2f-76d052dbdbd1&#xD;
 warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]&#xD;
       Failed to determine the https port for redirect.&#xD;
 fail: FarmGear_Application.Services.JwtBlacklistValidator[0]&#xD;
@@ -305,17 +305,17 @@ fail: FarmGear_Application.Services.JwtBlacklistValidator[0]&#xD;
          at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken&amp; signatureValidatedToken)&#xD;
          at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken&amp; validatedToken)&#xD;
          at FarmGear_Application.Services.JwtBlacklistValidator.ValidateToken(String securityToken, TokenValidationParameters validationParameters, SecurityToken&amp; validatedToken) in D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application\Services\JwtBlacklistValidator.cs:line 48&#xD;
-[xUnit.net 00:00:00.87]       Expected response.StatusCode to be HttpStatusCode.OK {value: 200}, but found HttpStatusCode.Unauthorized {value: 401}.&#xD;
-[xUnit.net 00:00:00.88]       Stack Trace:&#xD;
-[xUnit.net 00:00:00.88]            at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)&#xD;
-[xUnit.net 00:00:00.88]            at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
-[xUnit.net 00:00:00.88]            at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)&#xD;
-[xUnit.net 00:00:00.88]            at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
-[xUnit.net 00:00:00.88]            at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
-[xUnit.net 00:00:00.88]            at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)&#xD;
-[xUnit.net 00:00:00.88]            at FluentAssertions.Primitives.EnumAssertions`2.Be(TEnum expected, String because, Object[] becauseArgs)&#xD;
-[xUnit.net 00:00:00.88]         D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\Integration\EquipmentControllerIntegrationTests.cs(343,0): at FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetMyEquipmentList_WithAuthentication_ReturnsSuccess()&#xD;
-[xUnit.net 00:00:00.88]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:00.89]       Expected response.StatusCode to be HttpStatusCode.OK {value: 200}, but found HttpStatusCode.Unauthorized {value: 401}.&#xD;
+[xUnit.net 00:00:00.89]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.90]            at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)&#xD;
+[xUnit.net 00:00:00.90]            at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+[xUnit.net 00:00:00.90]            at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)&#xD;
+[xUnit.net 00:00:00.90]            at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+[xUnit.net 00:00:00.90]            at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+[xUnit.net 00:00:00.90]            at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)&#xD;
+[xUnit.net 00:00:00.90]            at FluentAssertions.Primitives.EnumAssertions`2.Be(TEnum expected, String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:00.90]         D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\Integration\EquipmentControllerIntegrationTests.cs(343,0): at FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetMyEquipmentList_WithAuthentication_ReturnsSuccess()&#xD;
+[xUnit.net 00:00:00.90]         --- End of stack trace from previous location ---&#xD;
 info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
       Role Farmer already exists&#xD;
 info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
@@ -333,7 +333,7 @@ info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
 info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
       Role Admin already exists&#xD;
 info: FarmGear_Application.Services.EnhancedJwtService[0]&#xD;
-      Generated token and cached session for user c23bb2d6-d764-4e1c-8ae7-7f86c7005e84&#xD;
+      Generated token and cached session for user 60dff372-25ca-4036-9e2f-76d052dbdbd1&#xD;
 warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]&#xD;
       Failed to determine the https port for redirect.&#xD;
 info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
@@ -353,23 +353,23 @@ info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
 info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
       Role Admin already exists&#xD;
 info: FarmGear_Application.Services.EnhancedJwtService[0]&#xD;
-      Generated token and cached session for user c23bb2d6-d764-4e1c-8ae7-7f86c7005e84&#xD;
+      Generated token and cached session for user 60dff372-25ca-4036-9e2f-76d052dbdbd1&#xD;
 warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]&#xD;
       Failed to determine the https port for redirect.&#xD;
-[xUnit.net 00:00:01.00]       System.InvalidOperationException : Each parameter in the deserialization constructor on type 'FarmGear_Application.DTOs.PaginatedList`1[FarmGear_Application.DTOs.Equipment.EquipmentViewDto]' must bind to an object property or field on deserialization. Each parameter name must match with a property or field on the object. Fields are only considered when 'JsonSerializerOptions.IncludeFields' is enabled. The match can be case-insensitive.&#xD;
-[xUnit.net 00:00:01.00]       Stack Trace:&#xD;
-[xUnit.net 00:00:01.00]            at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_ConstructorParameterIncompleteBinding(Type parentType)&#xD;
-[xUnit.net 00:00:01.00]            at System.Text.Json.Serialization.Converters.ObjectWithParameterizedConstructorConverter`1.OnTryRead(Utf8JsonReader&amp; reader, Type typeToConvert, JsonSerializerOptions options, ReadStack&amp; state, T&amp; value)&#xD;
-[xUnit.net 00:00:01.00]            at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader&amp; reader, Type typeToConvert, JsonSerializerOptions options, ReadStack&amp; state, T&amp; value, Boolean&amp; isPopulatedValue)&#xD;
-[xUnit.net 00:00:01.00]            at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack&amp; state, Utf8JsonReader&amp; reader)&#xD;
-[xUnit.net 00:00:01.00]            at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader&amp; reader, Type typeToConvert, JsonSerializerOptions options, ReadStack&amp; state, T&amp; value)&#xD;
-[xUnit.net 00:00:01.00]            at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader&amp; reader, Type typeToConvert, JsonSerializerOptions options, ReadStack&amp; state, T&amp; value, Boolean&amp; isPopulatedValue)&#xD;
-[xUnit.net 00:00:01.00]            at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader&amp; reader, T&amp; value, JsonSerializerOptions options, ReadStack&amp; state)&#xD;
-[xUnit.net 00:00:01.00]            at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState&amp; bufferState, JsonReaderState&amp; jsonReaderState, ReadStack&amp; readStack, T&amp; value)&#xD;
-[xUnit.net 00:00:01.00]            at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)&#xD;
-[xUnit.net 00:00:01.00]            at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, JsonSerializerOptions options, CancellationToken cancellationToken)&#xD;
-[xUnit.net 00:00:01.00]         D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\Integration\EquipmentControllerIntegrationTests.cs(414,0): at FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetEquipmentList_WithQueryParameters_ReturnsFilteredResults()&#xD;
-[xUnit.net 00:00:01.00]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:01.04]       System.InvalidOperationException : Each parameter in the deserialization constructor on type 'FarmGear_Application.DTOs.PaginatedList`1[FarmGear_Application.DTOs.Equipment.EquipmentViewDto]' must bind to an object property or field on deserialization. Each parameter name must match with a property or field on the object. Fields are only considered when 'JsonSerializerOptions.IncludeFields' is enabled. The match can be case-insensitive.&#xD;
+[xUnit.net 00:00:01.04]       Stack Trace:&#xD;
+[xUnit.net 00:00:01.04]            at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_ConstructorParameterIncompleteBinding(Type parentType)&#xD;
+[xUnit.net 00:00:01.04]            at System.Text.Json.Serialization.Converters.ObjectWithParameterizedConstructorConverter`1.OnTryRead(Utf8JsonReader&amp; reader, Type typeToConvert, JsonSerializerOptions options, ReadStack&amp; state, T&amp; value)&#xD;
+[xUnit.net 00:00:01.04]            at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader&amp; reader, Type typeToConvert, JsonSerializerOptions options, ReadStack&amp; state, T&amp; value, Boolean&amp; isPopulatedValue)&#xD;
+[xUnit.net 00:00:01.04]            at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack&amp; state, Utf8JsonReader&amp; reader)&#xD;
+[xUnit.net 00:00:01.04]            at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader&amp; reader, Type typeToConvert, JsonSerializerOptions options, ReadStack&amp; state, T&amp; value)&#xD;
+[xUnit.net 00:00:01.04]            at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader&amp; reader, Type typeToConvert, JsonSerializerOptions options, ReadStack&amp; state, T&amp; value, Boolean&amp; isPopulatedValue)&#xD;
+[xUnit.net 00:00:01.04]            at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader&amp; reader, T&amp; value, JsonSerializerOptions options, ReadStack&amp; state)&#xD;
+[xUnit.net 00:00:01.04]            at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState&amp; bufferState, JsonReaderState&amp; jsonReaderState, ReadStack&amp; readStack, T&amp; value)&#xD;
+[xUnit.net 00:00:01.04]            at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)&#xD;
+[xUnit.net 00:00:01.04]            at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, JsonSerializerOptions options, CancellationToken cancellationToken)&#xD;
+[xUnit.net 00:00:01.04]         D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\Integration\EquipmentControllerIntegrationTests.cs(414,0): at FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetEquipmentList_WithQueryParameters_ReturnsFilteredResults()&#xD;
+[xUnit.net 00:00:01.04]         --- End of stack trace from previous location ---&#xD;
 info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
       Role Farmer already exists&#xD;
 info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
@@ -387,27 +387,7 @@ info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
 info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
       Role Admin already exists&#xD;
 info: FarmGear_Application.Services.EnhancedJwtService[0]&#xD;
-      Generated token and cached session for user c23bb2d6-d764-4e1c-8ae7-7f86c7005e84&#xD;
-warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]&#xD;
-      Failed to determine the https port for redirect.&#xD;
-info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
-      Role Farmer already exists&#xD;
-info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
-      Role Provider already exists&#xD;
-info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
-      Role Official already exists&#xD;
-info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
-      Role Admin already exists&#xD;
-info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
-      Role Farmer already exists&#xD;
-info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
-      Role Provider already exists&#xD;
-info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
-      Role Official already exists&#xD;
-info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
-      Role Admin already exists&#xD;
-info: FarmGear_Application.Services.EnhancedJwtService[0]&#xD;
-      Generated token and cached session for user c23bb2d6-d764-4e1c-8ae7-7f86c7005e84&#xD;
+      Generated token and cached session for user 60dff372-25ca-4036-9e2f-76d052dbdbd1&#xD;
 warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]&#xD;
       Failed to determine the https port for redirect.&#xD;
 info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
@@ -427,7 +407,7 @@ info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
 info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
       Role Admin already exists&#xD;
 info: FarmGear_Application.Services.EnhancedJwtService[0]&#xD;
-      Generated token and cached session for user c23bb2d6-d764-4e1c-8ae7-7f86c7005e84&#xD;
+      Generated token and cached session for user 60dff372-25ca-4036-9e2f-76d052dbdbd1&#xD;
 warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]&#xD;
       Failed to determine the https port for redirect.&#xD;
 info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
@@ -447,7 +427,27 @@ info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
 info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
       Role Admin already exists&#xD;
 info: FarmGear_Application.Services.EnhancedJwtService[0]&#xD;
-      Generated token and cached session for user c23bb2d6-d764-4e1c-8ae7-7f86c7005e84&#xD;
+      Generated token and cached session for user 60dff372-25ca-4036-9e2f-76d052dbdbd1&#xD;
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]&#xD;
+      Failed to determine the https port for redirect.&#xD;
+info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
+      Role Farmer already exists&#xD;
+info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
+      Role Provider already exists&#xD;
+info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
+      Role Official already exists&#xD;
+info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
+      Role Admin already exists&#xD;
+info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
+      Role Farmer already exists&#xD;
+info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
+      Role Provider already exists&#xD;
+info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
+      Role Official already exists&#xD;
+info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
+      Role Admin already exists&#xD;
+info: FarmGear_Application.Services.EnhancedJwtService[0]&#xD;
+      Generated token and cached session for user 60dff372-25ca-4036-9e2f-76d052dbdbd1&#xD;
 warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]&#xD;
       Failed to determine the https port for redirect.&#xD;
 fail: FarmGear_Application.Services.JwtBlacklistValidator[0]&#xD;
@@ -460,51 +460,17 @@ fail: FarmGear_Application.Services.JwtBlacklistValidator[0]&#xD;
          at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken&amp; signatureValidatedToken)&#xD;
          at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken&amp; validatedToken)&#xD;
          at FarmGear_Application.Services.JwtBlacklistValidator.ValidateToken(String securityToken, TokenValidationParameters validationParameters, SecurityToken&amp; validatedToken) in D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application\Services\JwtBlacklistValidator.cs:line 48&#xD;
-[xUnit.net 00:00:01.09]       Expected response.StatusCode to be HttpStatusCode.Created {value: 201}, but found HttpStatusCode.Unauthorized {value: 401}.&#xD;
-[xUnit.net 00:00:01.09]       Stack Trace:&#xD;
-[xUnit.net 00:00:01.09]            at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)&#xD;
-[xUnit.net 00:00:01.09]            at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
-[xUnit.net 00:00:01.09]            at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)&#xD;
-[xUnit.net 00:00:01.09]            at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
-[xUnit.net 00:00:01.09]            at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
-[xUnit.net 00:00:01.09]            at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)&#xD;
-[xUnit.net 00:00:01.09]            at FluentAssertions.Primitives.EnumAssertions`2.Be(TEnum expected, String because, Object[] becauseArgs)&#xD;
-[xUnit.net 00:00:01.09]         D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\Integration\EquipmentControllerIntegrationTests.cs(302,0): at FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.CreateEquipment_WithAuthentication_ReturnsCreated()&#xD;
-[xUnit.net 00:00:01.09]         --- End of stack trace from previous location ---&#xD;
-info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
-      Role Farmer already exists&#xD;
-info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
-      Role Provider already exists&#xD;
-info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
-      Role Official already exists&#xD;
-info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
-      Role Admin already exists&#xD;
-info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
-      Role Farmer already exists&#xD;
-info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
-      Role Provider already exists&#xD;
-info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
-      Role Official already exists&#xD;
-info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
-      Role Admin already exists&#xD;
-info: FarmGear_Application.Services.EnhancedJwtService[0]&#xD;
-      Generated token and cached session for user c23bb2d6-d764-4e1c-8ae7-7f86c7005e84&#xD;
-warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]&#xD;
-      Failed to determine the https port for redirect.&#xD;
-[xUnit.net 00:00:01.13]       System.InvalidOperationException : Each parameter in the deserialization constructor on type 'FarmGear_Application.DTOs.PaginatedList`1[FarmGear_Application.DTOs.Equipment.EquipmentViewDto]' must bind to an object property or field on deserialization. Each parameter name must match with a property or field on the object. Fields are only considered when 'JsonSerializerOptions.IncludeFields' is enabled. The match can be case-insensitive.&#xD;
+[xUnit.net 00:00:01.13]       Expected response.StatusCode to be HttpStatusCode.Created {value: 201}, but found HttpStatusCode.Unauthorized {value: 401}.&#xD;
 [xUnit.net 00:00:01.13]       Stack Trace:&#xD;
-[xUnit.net 00:00:01.13]            at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_ConstructorParameterIncompleteBinding(Type parentType)&#xD;
-[xUnit.net 00:00:01.13]            at System.Text.Json.Serialization.Converters.ObjectWithParameterizedConstructorConverter`1.OnTryRead(Utf8JsonReader&amp; reader, Type typeToConvert, JsonSerializerOptions options, ReadStack&amp; state, T&amp; value)&#xD;
-[xUnit.net 00:00:01.13]            at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader&amp; reader, Type typeToConvert, JsonSerializerOptions options, ReadStack&amp; state, T&amp; value, Boolean&amp; isPopulatedValue)&#xD;
-[xUnit.net 00:00:01.13]            at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack&amp; state, Utf8JsonReader&amp; reader)&#xD;
-[xUnit.net 00:00:01.13]            at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader&amp; reader, Type typeToConvert, JsonSerializerOptions options, ReadStack&amp; state, T&amp; value)&#xD;
-[xUnit.net 00:00:01.13]            at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader&amp; reader, Type typeToConvert, JsonSerializerOptions options, ReadStack&amp; state, T&amp; value, Boolean&amp; isPopulatedValue)&#xD;
-[xUnit.net 00:00:01.13]            at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader&amp; reader, T&amp; value, JsonSerializerOptions options, ReadStack&amp; state)&#xD;
-[xUnit.net 00:00:01.14]            at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState&amp; bufferState, JsonReaderState&amp; jsonReaderState, ReadStack&amp; readStack, T&amp; value)&#xD;
-[xUnit.net 00:00:01.14]            at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)&#xD;
-[xUnit.net 00:00:01.14]            at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, JsonSerializerOptions options, CancellationToken cancellationToken)&#xD;
-[xUnit.net 00:00:01.14]         D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\Integration\EquipmentControllerIntegrationTests.cs(240,0): at FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetEquipmentList_ReturnsSuccessAndCorrectFormat()&#xD;
-[xUnit.net 00:00:01.14]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:01.13]            at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)&#xD;
+[xUnit.net 00:00:01.13]            at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+[xUnit.net 00:00:01.13]            at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)&#xD;
+[xUnit.net 00:00:01.13]            at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+[xUnit.net 00:00:01.13]            at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+[xUnit.net 00:00:01.13]            at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)&#xD;
+[xUnit.net 00:00:01.13]            at FluentAssertions.Primitives.EnumAssertions`2.Be(TEnum expected, String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:01.13]         D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\Integration\EquipmentControllerIntegrationTests.cs(302,0): at FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.CreateEquipment_WithAuthentication_ReturnsCreated()&#xD;
+[xUnit.net 00:00:01.13]         --- End of stack trace from previous location ---&#xD;
 info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
       Role Farmer already exists&#xD;
 info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
@@ -522,24 +488,58 @@ info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
 info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
       Role Admin already exists&#xD;
 info: FarmGear_Application.Services.EnhancedJwtService[0]&#xD;
-      Generated token and cached session for user c23bb2d6-d764-4e1c-8ae7-7f86c7005e84&#xD;
+      Generated token and cached session for user 60dff372-25ca-4036-9e2f-76d052dbdbd1&#xD;
 warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]&#xD;
       Failed to determine the https port for redirect.&#xD;
-[xUnit.net 00:00:01.16]   Finished:    FarmGear_Application.Tests&#xD;
+[xUnit.net 00:00:01.17]       System.InvalidOperationException : Each parameter in the deserialization constructor on type 'FarmGear_Application.DTOs.PaginatedList`1[FarmGear_Application.DTOs.Equipment.EquipmentViewDto]' must bind to an object property or field on deserialization. Each parameter name must match with a property or field on the object. Fields are only considered when 'JsonSerializerOptions.IncludeFields' is enabled. The match can be case-insensitive.&#xD;
+[xUnit.net 00:00:01.17]       Stack Trace:&#xD;
+[xUnit.net 00:00:01.17]            at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_ConstructorParameterIncompleteBinding(Type parentType)&#xD;
+[xUnit.net 00:00:01.17]            at System.Text.Json.Serialization.Converters.ObjectWithParameterizedConstructorConverter`1.OnTryRead(Utf8JsonReader&amp; reader, Type typeToConvert, JsonSerializerOptions options, ReadStack&amp; state, T&amp; value)&#xD;
+[xUnit.net 00:00:01.17]            at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader&amp; reader, Type typeToConvert, JsonSerializerOptions options, ReadStack&amp; state, T&amp; value, Boolean&amp; isPopulatedValue)&#xD;
+[xUnit.net 00:00:01.17]            at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack&amp; state, Utf8JsonReader&amp; reader)&#xD;
+[xUnit.net 00:00:01.17]            at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader&amp; reader, Type typeToConvert, JsonSerializerOptions options, ReadStack&amp; state, T&amp; value)&#xD;
+[xUnit.net 00:00:01.17]            at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader&amp; reader, Type typeToConvert, JsonSerializerOptions options, ReadStack&amp; state, T&amp; value, Boolean&amp; isPopulatedValue)&#xD;
+[xUnit.net 00:00:01.17]            at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader&amp; reader, T&amp; value, JsonSerializerOptions options, ReadStack&amp; state)&#xD;
+[xUnit.net 00:00:01.17]            at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState&amp; bufferState, JsonReaderState&amp; jsonReaderState, ReadStack&amp; readStack, T&amp; value)&#xD;
+[xUnit.net 00:00:01.17]            at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)&#xD;
+[xUnit.net 00:00:01.17]            at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, JsonSerializerOptions options, CancellationToken cancellationToken)&#xD;
+[xUnit.net 00:00:01.17]         D:\CICDtest\test-cicd-project\test-cicd-project\FarmGear_Application.Tests\Integration\EquipmentControllerIntegrationTests.cs(240,0): at FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetEquipmentList_ReturnsSuccessAndCorrectFormat()&#xD;
+[xUnit.net 00:00:01.17]         --- End of stack trace from previous location ---&#xD;
+info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
+      Role Farmer already exists&#xD;
+info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
+      Role Provider already exists&#xD;
+info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
+      Role Official already exists&#xD;
+info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
+      Role Admin already exists&#xD;
+info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
+      Role Farmer already exists&#xD;
+info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
+      Role Provider already exists&#xD;
+info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
+      Role Official already exists&#xD;
+info: FarmGear_Application.Services.RoleSeedService[0]&#xD;
+      Role Admin already exists&#xD;
+info: FarmGear_Application.Services.EnhancedJwtService[0]&#xD;
+      Generated token and cached session for user 60dff372-25ca-4036-9e2f-76d052dbdbd1&#xD;
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]&#xD;
+      Failed to determine the https port for redirect.&#xD;
+[xUnit.net 00:00:01.19]   Finished:    FarmGear_Application.Tests&#xD;
 </StdOut>
     </Output>
     <RunInfos>
-      <RunInfo computerName="CY" outcome="Error" timestamp="2025-06-25T13:32:30.7739313+08:00">
-        <Text>[xUnit.net 00:00:00.87]     FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetMyEquipmentList_WithAuthentication_ReturnsSuccess [FAIL]</Text>
+      <RunInfo computerName="CY" outcome="Error" timestamp="2025-06-25T13:30:18.9846517+08:00">
+        <Text>[xUnit.net 00:00:00.89]     FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetMyEquipmentList_WithAuthentication_ReturnsSuccess [FAIL]</Text>
       </RunInfo>
-      <RunInfo computerName="CY" outcome="Error" timestamp="2025-06-25T13:32:30.9050425+08:00">
-        <Text>[xUnit.net 00:00:01.00]     FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetEquipmentList_WithQueryParameters_ReturnsFilteredResults [FAIL]</Text>
+      <RunInfo computerName="CY" outcome="Error" timestamp="2025-06-25T13:30:19.1357228+08:00">
+        <Text>[xUnit.net 00:00:01.04]     FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetEquipmentList_WithQueryParameters_ReturnsFilteredResults [FAIL]</Text>
       </RunInfo>
-      <RunInfo computerName="CY" outcome="Error" timestamp="2025-06-25T13:32:30.9932541+08:00">
-        <Text>[xUnit.net 00:00:01.09]     FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.CreateEquipment_WithAuthentication_ReturnsCreated [FAIL]</Text>
+      <RunInfo computerName="CY" outcome="Error" timestamp="2025-06-25T13:30:19.2250206+08:00">
+        <Text>[xUnit.net 00:00:01.13]     FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.CreateEquipment_WithAuthentication_ReturnsCreated [FAIL]</Text>
       </RunInfo>
-      <RunInfo computerName="CY" outcome="Error" timestamp="2025-06-25T13:32:31.0360057+08:00">
-        <Text>[xUnit.net 00:00:01.13]     FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetEquipmentList_ReturnsSuccessAndCorrectFormat [FAIL]</Text>
+      <RunInfo computerName="CY" outcome="Error" timestamp="2025-06-25T13:30:19.2689152+08:00">
+        <Text>[xUnit.net 00:00:01.17]     FarmGear_Application.Tests.Integration.EquipmentControllerIntegrationTests.GetEquipmentList_ReturnsSuccessAndCorrectFormat [FAIL]</Text>
       </RunInfo>
     </RunInfos>
   </ResultSummary>
