@@ -17,7 +17,7 @@ jobs:
           MYSQL_ROOT_PASSWORD: test123456
           MYSQL_DATABASE: FarmGearTestDb
           MYSQL_USER: testuser
-          MYSQL_PASSWORD: test123456
+          MYSQL_PASSWORD: test123456a
         ports:
           - 3307:3306
         options: --health-cmd="mysqladmin ping -h localhost" --health-interval=10s --health-timeout=5s --health-retries=5
@@ -35,6 +35,11 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 8.0.x
+
+      - name: Install coverage tools
+        run: |
+          dotnet tool install --global dotnet-reportgenerator-globaltool
+          dotnet tool install --global coverlet.console
 
       - name: Wait for MySQL and Redis
         run: |
@@ -68,10 +73,19 @@ jobs:
           echo "Checking test files..."
           find FarmGear_Application.Tests/ -name "*.cs" | head -10
 
-      - name: Run tests with verbose output
+      - name: Run tests with code coverage
         run: |
-          echo "Running tests with detailed logging..."
-          dotnet test --no-build --verbosity detailed --logger "console;verbosity=detailed" --logger "trx;LogFileName=test-results.trx" --results-directory ./TestResults --collect:"XPlat Code Coverage" || echo "Tests failed, but continuing..."
+          echo "Running tests with code coverage collection..."
+          dotnet test --no-build --verbosity normal \
+            --logger "trx;LogFileName=test-results.trx" \
+            --results-directory ./TestResults \
+            --collect:"XPlat Code Coverage" \
+            --settings coverlet.runsettings \
+            /p:CollectCoverage=true \
+            /p:CoverletOutputFormat=cobertura \
+            /p:CoverletOutput=./TestResults/coverage.cobertura.xml \
+            /p:Exclude="[*.Tests]*%2c[*.Test]*%2c[xunit.*]*" \
+            || echo "Tests failed, but continuing to generate coverage report..."
         env:
           USE_IN_MEMORY_DB: false
           USE_MOCK_REDIS: false
@@ -80,6 +94,59 @@ jobs:
           ASPNETCORE_ENVIRONMENT: Testing
           DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: 1
 
+      - name: Generate coverage report
+        if: always()
+        run: |
+          echo "Generating HTML coverage report..."
+          # 查找所有 coverage.cobertura.xml 文件
+          find ./TestResults -name "coverage.cobertura.xml" -exec ls -la {} \; || echo "No coverage.cobertura.xml found"
+          find ./TestResults -name "*.xml" -exec ls -la {} \; || echo "No XML files found"
+          
+          # 使用 ReportGenerator 生成 HTML 报告
+          if find ./TestResults -name "coverage.cobertura.xml" | grep -q .; then
+            reportgenerator \
+              -reports:"./TestResults/**/coverage.cobertura.xml" \
+              -targetdir:"./TestResults/html-coverage-report" \
+              -reporttypes:"Html;HtmlSummary;Cobertura;JsonSummary" \
+              -verbosity:Info
+          else
+            echo "No coverage.cobertura.xml files found, trying alternative patterns..."
+            # 尝试查找其他格式的覆盖率文件
+            find ./TestResults -name "*.xml" -type f | head -5
+            if find ./TestResults -name "*.xml" | grep -q .; then
+              reportgenerator \
+                -reports:"./TestResults/**/*.xml" \
+                -targetdir:"./TestResults/html-coverage-report" \
+                -reporttypes:"Html;HtmlSummary;Cobertura;JsonSummary" \
+                -verbosity:Info
+            fi
+          fi
+
+      - name: Display coverage summary
+        if: always()
+        run: |
+          echo "=== Coverage Summary ==="
+          if [ -f "./TestResults/html-coverage-report/Summary.json" ]; then
+            cat ./TestResults/html-coverage-report/Summary.json | jq '.summary'
+          else
+            echo "No coverage summary found"
+          fi
+          
+          echo "=== Available coverage files ==="
+          find ./TestResults -name "*.xml" -o -name "*.json" | head -10
+
+      - name: Upload coverage to Codecov
+        if: always()
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./TestResults/**/coverage.cobertura.xml,./TestResults/**/*.xml
+          directory: ./TestResults
+          flags: unittests
+          name: farmgear-coverage
+          fail_ci_if_error: false
+          verbose: true
+          token: ${{ secrets.CODECOV_TOKEN }}
+
       - name: Check test results
         if: always()
         run: |
@@ -87,8 +154,54 @@ jobs:
           find ./TestResults -name "*.trx" -exec ls -la {} \; || echo "No .trx files found"
           find ./FarmGear_Application.Tests/TestResults -name "*.trx" -exec ls -la {} \; || echo "No .trx files found in test project"
 
-      - name: Upload Test Report
+      - name: Upload Test Results
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: test-results
-          path: ./FarmGear_Application.Tests/TestResults/*.trx 
+          path: |
+            ./TestResults/*.trx
+            ./FarmGear_Application.Tests/TestResults/*.trx
+
+      - name: Upload Coverage Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: |
+            ./TestResults/html-coverage-report/
+            ./TestResults/**/coverage.cobertura.xml
+            ./TestResults/**/*.xml
+
+      - name: Comment PR with coverage
+        if: github.event_name == 'pull_request' && always()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            const path = './TestResults/html-coverage-report/Summary.json';
+            
+            if (fs.existsSync(path)) {
+              const summary = JSON.parse(fs.readFileSync(path, 'utf8'));
+              const coverage = summary.summary;
+              
+              const comment = `## 📊 Code Coverage Report
+              
+              | Metric | Value |
+              |--------|-------|
+              | Line Coverage | ${coverage.linecoverage}% |
+              | Branch Coverage | ${coverage.branchcoverage}% |
+              | Method Coverage | ${coverage.methodcoverage}% |
+              
+              📈 [View detailed coverage report](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
+              `;
+              
+              github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: comment
+              });
+            } else {
+              console.log('Coverage summary file not found');
+            } 
